@@ -43,26 +43,26 @@
 
     <!--//誕生日のやつ-->
 
+    <!--    誕生日のやつここまで-->
+
+
     <TextView
         android:id="@+id/Profession"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:text="@string/Profession"
         app:layout_constraintBottom_toTopOf="@+id/BirthDay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email"
-        app:layout_constraintVertical_bias="0.561" />
-
-    <!--    誕生日のやつここまで-->
-
+        app:layout_constraintVertical_bias="0.481" />
 
     <TextView
         android:id="@+id/BirthDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="76dp"
         android:text="@string/BirthDay"
         app:layout_constraintBottom_toTopOf="@+id/Location"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,7 +71,7 @@
         android:id="@+id/numberPicker"
         android:layout_width="60dp"
         android:layout_height="57dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toEndOf="@+id/BirthDay"
@@ -81,7 +81,7 @@
         android:id="@+id/UsernameBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="52dp"
         android:ems="10"
@@ -96,12 +96,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toEndOf="@+id/Password"
         app:layout_constraintTop_toBottomOf="@+id/UsernameBox" />
 
@@ -109,8 +109,8 @@
         android:id="@+id/EmailBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,12 +121,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Profession"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/Profession"
         app:layout_constraintTop_toBottomOf="@+id/EmailBox" />
 
@@ -134,8 +134,8 @@
         android:id="@+id/Location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="264dp"
         android:text="@string/Location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -144,28 +144,37 @@
         android:id="@+id/Locationbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Location"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintBottom_toTopOf="@+id/Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toEndOf="@+id/Location"
+        app:layout_constraintTop_toBottomOf="@+id/numberPicker"
+        app:layout_constraintVertical_bias="0.285" />
 
     <EditText
         android:id="@+id/Profile"
         android:layout_width="273dp"
         android:layout_height="140dp"
+        android:layout_marginTop="31dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Profile"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="548dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Location" />
 
     <Button
         android:id="@+id/Done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Done"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="695dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
