@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ARSNSFirst</string>
+    <string name="UserName">USERNAME</string>
+    <string name="Email">E-MAIL</string>
+    <string name="Password">PASSWORD</string>
+    <string name="Profession">PROFESSION</string>
+    <string name="Location">LOCATION</string>
+    <string name="BirthDay">BIRTHDAY</string>
+    <string name="Profile">PROFILE</string>
+    <string name="Done">DONE</string>
 </resources>

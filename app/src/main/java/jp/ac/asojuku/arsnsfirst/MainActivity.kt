@@ -30,7 +30,10 @@ class MainActivity : AppCompatActivity() {
         loginBtn.setOnClickListener {
             createSignInIntent()
         }
-
+        //ログインボタン処理
+        entryBtn.setOnClickListener {
+            jumpEntry()
+        }
     }
 
     private fun createSignInIntent() {
@@ -84,4 +87,10 @@ class MainActivity : AppCompatActivity() {
         }, 1000)
     }
 
+    private fun jumpEntry(){
+        Handler().postDelayed(Runnable {
+            val intent = Intent(this, EntryActivity::class.java)
+            startActivity(intent)
+        }, 1000)
+    }
 }
