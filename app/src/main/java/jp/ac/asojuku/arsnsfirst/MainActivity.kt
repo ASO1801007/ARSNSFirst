@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume(){
         super.onResume();
 
-        //ログインボタン処理
+        //ログインボタン処理@kuwsasaki
         loginBtn.setOnClickListener {
             createSignInIntent()
         }
